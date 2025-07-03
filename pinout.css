@@ -36,7 +36,7 @@ header {
     color: #e9e5d2;
     width: 100%;
     line-height: 22px;
-    padding: 10px;
+    padding: 10px 0;
     border-bottom: 5px solid #268bd2;
     display: grid;
     grid-template-columns: auto auto;
