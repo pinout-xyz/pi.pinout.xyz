@@ -9,6 +9,7 @@ article {
     margin: 0;
     padding: 0;
 }
+
 footer {
     display: grid;
     align-items: center;
@@ -18,9 +19,17 @@ footer p {
     padding: 5px 10px;
     margin: 0;
     text-align: center;
+    color: #666666;
 }
 footer a.selected {
+    color: #666666;
     text-decoration: none;
+}
+footer a, footer a:visited {
+    color: #1d6ca5;
+}
+footer a:hover {
+    color: #3ba6f1;
 }
 header {
     background: #002b36;
@@ -241,28 +250,15 @@ tr:hover i {color: inherit;}
 }
 
 @media (prefers-color-scheme: dark) {
-
     body {
         background-color: #000000;
         color: #eee;
     }
     .labels .ground td {color: #eeeeee66;}
     header {
-        background: #151515;
-    }
-    .filter label,
-    footer p,
-    nav p {
+        background: #111111;
         color: #666666;
-    }
-    footer a.selected {
-        color: #666666;
-    }
-    footer a, footer a:visited {
-        color: #1d6ca5;
-    }
-    footer a:hover {
-        color: #3ba6f1;
+        border-bottom-color: #222222;
     }
     .labels td {
         border-bottom-color: #1f1f1f;
