@@ -268,3 +268,9 @@ tr:hover i {color: inherit;}
     }
     tr.ground:hover td, .labels tbody tr:hover {color: #fff;}
 }
+
+@media print {
+    footer, header ul {display:none;}
+    article section {margin: 0;}
+    .legend img {max-width: 150px;}
+}
