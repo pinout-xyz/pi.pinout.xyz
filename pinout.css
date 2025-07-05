@@ -219,28 +219,28 @@ tr:hover i {color: inherit;}
 .labels tbody tr.uart:before   {background-color: #6c71c4aa;}
 .labels tbody tr.ground:before {background-color: #555555aa;}
 
-.labels tbody tr:hover.gpio td   {background-color: #85990033; border-color: #859900ee;}
-.labels tbody tr:hover.pwm td    {background-color: #002b3633; border-color: #002b36ee;}
-.labels tbody tr:hover.supply td {background-color: #dc322f33; border-color: #dc322fee;}
-.labels tbody tr:hover.power td  {background-color: #df8b2c33; border-color: #df8b2cee;}
-.labels tbody tr:hover.i2s td    {background-color: #2aa19833; border-color: #2aa198ee;}
-.labels tbody tr:hover.gpclk td  {background-color: #df8f8e33; border-color: #df8f8eee;}
-.labels tbody tr:hover.i2c td    {background-color: #268bd233; border-color: #268bd2ee;}
-.labels tbody tr:hover.spi td    {background-color: #d3368233; border-color: #d33682ee;}
-.labels tbody tr:hover.uart td   {background-color: #6c71c433; border-color: #6c71c4ee;}
-.labels tbody tr:hover.ground td {background-color: #55555533; border-color: #555555ee;}
+.labels tbody tr:hover.gpio td, .labels tbody tr.selected.gpio td   {background-color: #85990033; border-color: #859900ee;}
+.labels tbody tr:hover.pwm td, .labels tbody tr.selected.pwm td    {background-color: #002b3633; border-color: #002b36ee;}
+.labels tbody tr:hover.supply td, .labels tbody tr.selected.supply td {background-color: #dc322f33; border-color: #dc322fee;}
+.labels tbody tr:hover.power td, .labels tbody tr.selected.power td  {background-color: #df8b2c33; border-color: #df8b2cee;}
+.labels tbody tr:hover.i2s td, .labels tbody tr.selected.i2s td    {background-color: #2aa19833; border-color: #2aa198ee;}
+.labels tbody tr:hover.gpclk td, .labels tbody tr.selected.gpclk td  {background-color: #df8f8e33; border-color: #df8f8eee;}
+.labels tbody tr:hover.i2c td, .labels tbody tr.selected.i2c td    {background-color: #268bd233; border-color: #268bd2ee;}
+.labels tbody tr:hover.spi td, .labels tbody tr.selected.spi td    {background-color: #d3368233; border-color: #d33682ee;}
+.labels tbody tr:hover.uart td, .labels tbody tr.selected.uart td   {background-color: #6c71c433; border-color: #6c71c4ee;}
+.labels tbody tr:hover.ground td, .labels tbody tr.selected.ground td {background-color: #55555533; border-color: #555555ee;}
 
 .labels tbody tr:hover:before {font-weight: bold;}
-.labels tbody tr.gpio:hover:before  {background-color: #859900cc;border-color: #859900;}
-.labels tbody tr.pwm:hover:before   {background-color: #002b36cc;border-color: #002b36;}
-.labels tbody tr.supply:hover:before{background-color: #dc322fcc;border-color: #dc322f;}
-.labels tbody tr.power:hover:before {background-color: #df8b2ccc;border-color: #df8b2c;}
-.labels tbody tr.i2s:hover:before   {background-color: #2aa198cc;border-color: #2aa198;}
-.labels tbody tr.gpclk:hover:before {background-color: #df8f8ecc;border-color: #df8f8e;}
-.labels tbody tr.i2c:hover:before   {background-color: #268bd2cc;border-color: #268bd2;}
-.labels tbody tr.spi:hover:before   {background-color: #d33682cc;border-color: #d33682;}
-.labels tbody tr.uart:hover:before  {background-color: #6c71c4cc;border-color: #6c71c4;}
-.labels tbody tr.ground:hover:before{background-color: #555555cc;border-color: #555555;}
+.labels tbody tr.gpio:hover:before, .labels tbody tr.gpio.selected:before  {background-color: #859900cc;border-color: #859900;}
+.labels tbody tr.pwm:hover:before, .labels tbody tr.pwm.selected:before   {background-color: #002b36cc;border-color: #002b36;}
+.labels tbody tr.supply:hover:before, .labels tbody tr.supply.selected:before{background-color: #dc322fcc;border-color: #dc322f;}
+.labels tbody tr.power:hover:before, .labels tbody tr.power.selected:before {background-color: #df8b2ccc;border-color: #df8b2c;}
+.labels tbody tr.i2s:hover:before, .labels tbody tr.i2s.selected:before   {background-color: #2aa198cc;border-color: #2aa198;}
+.labels tbody tr.gpclk:hover:before, .labels tbody tr.gpclk.selected:before {background-color: #df8f8ecc;border-color: #df8f8e;}
+.labels tbody tr.i2c:hover:before, .labels tbody tr.i2c.selected:before   {background-color: #268bd2cc;border-color: #268bd2;}
+.labels tbody tr.spi:hover:before, .labels tbody tr.spi.selected:before   {background-color: #d33682cc;border-color: #d33682;}
+.labels tbody tr.uart:hover:before, .labels tbody tr.uart.selected:before  {background-color: #6c71c4cc;border-color: #6c71c4;}
+.labels tbody tr.ground:hover:before, .labels tbody tr.ground.selected:before{background-color: #555555cc;border-color: #555555;}
 
 
 @media (min-width: 640px) {
