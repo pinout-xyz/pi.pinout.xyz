@@ -25,6 +25,7 @@ function precache() {
       "pipipi-icon-192.png",
       "pipipi-icon-512.png",
       "index.html",
+      "pi-orientation.svg",
       "register_serviceworker.js",
       "sw.js",
       "pinout.css",

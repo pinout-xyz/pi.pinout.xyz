@@ -130,6 +130,8 @@ article section li {
     border-radius: 50%;
     line-height: 20px;
     color: #ffffffaa;
+    position: relative;
+    top: 2px; /* slight nudge to line up with label */
 }
 /* Square pin-1 designator */
 .labels:nth-child(1) tr:nth-child(1):before {
@@ -145,11 +147,18 @@ article section li {
     white-space: nowrap;
     position: relative;
     border-bottom: 1px solid #CCCCCC;
+    border-top: 1px solid #CCCCCC;
     padding: 0 5px 0 5px;
+    margin-bottom: -1px;
+}
+
+.labels tbody tr:hover + tr td,
+.labels tbody tr.selected + tr td {
+    border-top-color: transparent;
 }
 
 .labels tr:last-child td, .labels tr:last-child th {
-    border-bottom: 0;
+    border-bottom-color: transparent;
 }
 
 table {
@@ -190,7 +199,7 @@ tr.ground:hover td, .labels tbody tr:hover {color: #000;}
 .labels.left tr td:last-child {border-left: 5px solid transparent;}
 .labels.right tr td:last-child {border-right: 5px solid transparent;}
 
-/* Icon colours, helps diambiguate some of the similar looking icons
+/* Icon colours, helps disambiguate some of the similar looking icons
 which don't pass the squint-test well */
 .gpio   i {color: #859900aa;}
 /*.pwm    i {color: #002b36ee;}*/ /* TODO: Too dark for dark mode... */
@@ -261,6 +270,7 @@ tr:hover i {color: inherit;}
         border-bottom-color: #222222;
     }
     .labels td {
+        border-top-color: #1f1f1f;
         border-bottom-color: #1f1f1f;
     }
     .labels tbody tr:before {
@@ -271,6 +281,7 @@ tr:hover i {color: inherit;}
 
 @media print {
     footer, header ul {display:none;}
+    header {background-color: transparent;}
     article section {margin: 0;}
     .legend img {max-width: 150px;}
 }
