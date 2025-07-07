@@ -31,6 +31,9 @@ footer a, footer a:visited {
 footer a:hover {
     color: #3ba6f1;
 }
+footer.print {
+    display: none;
+}
 header {
     background: #002b36;
     color: #e9e5d2;
@@ -157,6 +160,10 @@ article section li {
     border-top-color: transparent;
 }
 
+.labels tr:first-child td, .labels tr:first-child th {
+    border-top-color: transparent;
+}
+
 .labels tr:last-child td, .labels tr:last-child th {
     border-bottom-color: transparent;
 }
@@ -280,8 +287,16 @@ tr:hover i {color: inherit;}
 }
 
 @media print {
-    footer, header ul {display:none;}
-    header {background-color: transparent;}
+    footer, header ul {display: none;}
+    footer.print {
+        display: block;
+        border-top: 5px solid #268bd2;
+        width: 100%;
+    }
+    header {
+        background-color: transparent;
+        color: #666666;
+    }
     article section {margin: 0;}
     .legend img {max-width: 150px;}
 }
